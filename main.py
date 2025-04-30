@@ -14,9 +14,10 @@ def on_click(row, col):
 for i in range(3):
     row = []
     for j in range(3):
-        btn = tk.Button(window,text="", font=("Arial", 20)), widtht=5, height=2, command=lambda r=i, c=j: on_click(r,c))
+        btn = tk.Button(window,text="", font=("Arial", 20), width=5, height=2, command=lambda r=i, c=j: on_click(r,c))
         btn.grid(row=i, column=j)
         row.append(btn)
     buttons.append(row)
 
 window.mainloop()
+
